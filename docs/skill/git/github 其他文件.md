@@ -23,7 +23,7 @@ keywords: [github]
 ```
 # https://help.github.com/articles/about-codeowners/
 
-* @kuizuo
+* @Jon
 ```
 
 ### FUNDING.yml

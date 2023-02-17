@@ -172,7 +172,7 @@ r.GET("/query", func(c *gin.Context) {
 })
 ```
 
-浏览器请求http://127.0.0.1:8080/query?username=kuizuo 便可输出 `kuizuo1`
+浏览器请求http://127.0.0.1:8080/query?username=Jon 便可输出 `Jon1`
 
 ### 获取 Post 数据
 

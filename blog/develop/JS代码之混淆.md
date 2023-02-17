@@ -15,7 +15,7 @@ keywords: [javascript, ast, reverse, project]
 >
 > 书籍 《反爬虫 AST 原理与还原混淆实战》
 >
-> 相关混淆代码 [kuizuo/js-de-obfuscator](https://github.com/jonoop/js-de-obfuscator)
+> 相关混淆代码 [Jon/js-de-obfuscator](https://github.com/jonoop/js-de-obfuscator)
 >
 > 自写在线混淆与还原网站 [JS 代码混淆与还原 (jonoop.com)](http://deobfuscator.jonoop.com/)
 
@@ -683,7 +683,7 @@ traverse(ast, {
 `replaceWith` 一对一替换当前节点，且严格替换。
 
 ```javascript
-path.replaceWith(t.valueToNode('kuizuo'))
+path.replaceWith(t.valueToNode('Jon'))
 ```
 
 `replaceWithMultiple` 则是一对多，将多个节点替换到一个节点上。
@@ -691,7 +691,7 @@ path.replaceWith(t.valueToNode('kuizuo'))
 ```javascript
 traverse(ast, {
   ReturnStatement(path) {
-    path.replaceWithMultiple([t.expressionStatement(t.callExpression(t.memberExpression(t.identifier('console'), t.identifier('log')), [t.stringLiteral('kuizuo')])), t.returnStatement()])
+    path.replaceWithMultiple([t.expressionStatement(t.callExpression(t.memberExpression(t.identifier('console'), t.identifier('log')), [t.stringLiteral('Jon')])), t.returnStatement()])
     path.stop()
   },
 })
@@ -828,7 +828,7 @@ body
 
 ```javascript
 let obj = {
-  name: 'kuizuo',
+  name: 'Jon',
 }
 ```
 
@@ -896,7 +896,7 @@ Node {
 ```javascript
 function test() {
   let obj = {
-    name: 'kuizuo',
+    name: 'Jon',
   }
   return obj
 }
@@ -916,7 +916,7 @@ traverse(ast, {
 
 // function test() {
 //   let obj = {
-//     name: 'kuizuo'
+//     name: 'Jon'
 //   };
 //   return obj;
 // }
@@ -934,7 +934,7 @@ traverse(ast, {
 
 // function test() {
 //   let obj = {
-//     name: 'kuizuo'
+//     name: 'Jon'
 //   };
 //   return obj;
 // }
@@ -1056,7 +1056,7 @@ function _0xabcdef2() {
 
 ## 混淆实战
 
-关于混淆实战的代码都已贴到 Github[kuizuo/AST-obfuscator](https://github.com/jonoop/AST-obfuscator)，在`src/obfuscated`中便可看到完整的混淆程序。其中也包括一些实战还原的例子，大部分的写法都采用了 ES6 的类来写，方便编写理解。
+关于混淆实战的代码都已贴到 Github[Jon/AST-obfuscator](https://github.com/jonoop/AST-obfuscator)，在`src/obfuscated`中便可看到完整的混淆程序。其中也包括一些实战还原的例子，大部分的写法都采用了 ES6 的类来写，方便编写理解。
 
 大部分混淆的例子在这本书《反爬虫 AST 原理与还原混淆实战》中都有，例如常量混淆，数组混淆与乱序，标识符混淆等等就不细说了，上传的代码中有，不过书中有一些 es6 的代码是没提及到的。
 
@@ -1067,7 +1067,7 @@ function _0xabcdef2() {
 演示代码
 
 ```javascript
-let a = 'kuizuo'
+let a = 'Jon'
 ;`${a}nb${12}3${'456'}`
 ```
 
@@ -1128,7 +1128,7 @@ class Test {
   }
 }
 
-let test = new Test('kuizuo')
+let test = new Test('Jon')
 console.log(test.run())
 ```
 
@@ -1190,7 +1190,7 @@ traverse(ast, {
 })
 ```
 
-最终运行混淆程序，执行混淆后的代码，成功输出`kuizuo20`
+最终运行混淆程序，执行混淆后的代码，成功输出`Jon20`
 
 ---
 
@@ -1212,7 +1212,7 @@ traverse(ast, {
 
 ### 有混淆就有还原
 
-既然混淆是通过 AST 来进行混淆的，那么还原也同样可以，不过还原就不可能还原出原始开发者所编写的，就如同一些打包工具打包后的代码，比如将 name 压缩成 n，age 压缩成 a，那么就无法推断出 n 为 name，a 为 age，而混淆也是同理，像代码`let OOOOOO = atob('a3VpenVv')`，能还原的也只能是`let OOOOOO = ‘kuizuo’`或者是将标识符重新命名`let _0x123456 = ‘kuizuo’`，相对好看些。大部分的还原工作都只是将代码变得好读一些，比如`atob('a3VpenVv')`就可以变为`‘kuizuo’`，这便是基本的还原之一，关于还原还会另出一篇文章来记录，就不在这多废笔舌了。
+既然混淆是通过 AST 来进行混淆的，那么还原也同样可以，不过还原就不可能还原出原始开发者所编写的，就如同一些打包工具打包后的代码，比如将 name 压缩成 n，age 压缩成 a，那么就无法推断出 n 为 name，a 为 age，而混淆也是同理，像代码`let OOOOOO = atob('a3VpenVv')`，能还原的也只能是`let OOOOOO = ‘Jon’`或者是将标识符重新命名`let _0x123456 = ‘Jon’`，相对好看些。大部分的还原工作都只是将代码变得好读一些，比如`atob('a3VpenVv')`就可以变为`‘Jon’`，这便是基本的还原之一，关于还原还会另出一篇文章来记录，就不在这多废笔舌了。
 
 整个混淆的过程来看，无非就是多了门技能，对 js 有了更进一步的了解，略懂 js 编译过程中的语法分析，此外也感叹 Babel 提供如此强大的 api。同时也能尝试使用最新的 ECMAScript 语法特性，无需考虑兼容问题，babel 统统都能处理。就如同 babel 官网所说的：
 

@@ -9,7 +9,7 @@ keywords: [blog, docusaurus, project]
 
 博客地址: [Jon的小站](http://jonoop.com/)
 
-源码地址：[kuizuo/blog](https://github.com/jonoop/blog)
+源码地址：[Jon/blog](https://github.com/jonoop/blog)
 
 时隔近半年没好好整理文章，博客也写的不像个人样。:joy:
 

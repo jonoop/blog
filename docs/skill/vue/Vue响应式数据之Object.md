@@ -16,7 +16,7 @@ keywords: [vue, javascript]
 
 ```javascript
 const data = {
-  username: 'kuizuo',
+  username: 'Jon',
   password: 'a123456',
 }
 

@@ -18,7 +18,7 @@ const config = {
   url: 'http://jonoop.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
+  organizationName: 'Jon',
   projectName: 'blog',
   tagline: '记录所学知识，领略编程之美',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -27,7 +27,7 @@ const config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'Jon, kuizuo, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
+        content: 'Jon, Jon, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
       },
     ],
     // ...
@@ -68,9 +68,9 @@ module.exports = config
 ```javascript title='docusaurus.config.js'
 socials: {
     github: 'https://github.com/jonoop',
-    twitter: 'https://twitter.com/kuizuo',
+    twitter: 'https://twitter.com/Jon',
     juejin: 'https://juejin.cn/user/1565318510545901',
-    csdn: 'https://blog.csdn.net/kuizuo12',
+    csdn: 'https://blog.csdn.net/Jon12',
     qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
     cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
 },

@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: 'VScode-extension',
     description: 'vscode 插件的样品',
     preview: '/img/project/vscode-extension.png',
-    website: 'https://marketplace.visualstudio.com/items?itemName=kuizuo.vscode-extension-sample',
+    website: 'https://marketplace.visualstudio.com/items?itemName=Jon.vscode-extension-sample',
     source: 'https://github.com/jonoop/vscode-extension',
     tags: ['opensource'],
     type: 'web',
@@ -97,21 +97,21 @@ export const projects: Project[] = [
     type: 'other',
   },
   {
-    title: '@kuizuo/http',
+    title: '@Jon/http',
     description: '基于 Axios 封装的 HTTP 类库',
-    website: 'https://www.npmjs.com/package/@kuizuo/http',
+    website: 'https://www.npmjs.com/package/@Jon/http',
     tags: ['opensource', 'personal'],
     type: 'personal'
   },
   {
-    title: '@kuizuo/utils',
+    title: '@Jon/utils',
     description: '整理JavaScript / TypeScript的相关工具函数',
-    website: 'https://www.npmjs.com/package/@kuizuo/utils',
+    website: 'https://www.npmjs.com/package/@Jon/utils',
     tags: ['opensource', 'personal'],
     type: 'personal'
   },
   {
-    title: '@kuizuo/eslint-config',
+    title: '@Jon/eslint-config',
     description: 'WebSocket远程调用浏览器函数',
     website: 'https://github.com/jonoop/eslint-config',
     tags: ['opensource', 'personal'],

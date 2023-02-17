@@ -52,7 +52,7 @@ sticky: 5
 
 这里可以从已有的 git repository 中导入，也可以选择一个模板。
 
-这里登录我的 Github 账号选择仓库，然后点击 blog 仓库旁的 Import 即可。当然，你也可以直接拉取我的仓库，仓库地址：[kuizuo/blog](https://github.com/jonoop/blog)
+这里登录我的 Github 账号选择仓库，然后点击 blog 仓库旁的 Import 即可。当然，你也可以直接拉取我的仓库，仓库地址：[Jon/blog](https://github.com/jonoop/blog)
 
 ![image-20220511165513526](https://img.jonoop.com/image-20220511165513526.png)
 
@@ -135,7 +135,7 @@ vercel --prod
 ```
 Vercel CLI 24.2.1
 ? Set up and deploy “F:\Project\React\online-tools”? [Y/n] y
-? Which scope do you want to deploy to? kuizuo
+? Which scope do you want to deploy to? Jon
 ? Link to existing project? [y/N] n
 ? What’s your project’s name? online-tools
 ? In which directory is your code located? ./
@@ -144,11 +144,11 @@ Auto-detected Project Settings (Create React App):
 - Output Directory: build
 - Development Command: react-scripts start
 ? Want to override the settings? [y/N] n
-🔗  Linked to kuizuo12/online-tools (created .vercel and added it to .gitignore)
-🔍  Inspect: https://vercel.com/kuizuo12/online-tools/6t8Vt8rG3waGVHTKU7ZzJuGc6Hoq [2s]
+🔗  Linked to Jon12/online-tools (created .vercel and added it to .gitignore)
+🔍  Inspect: https://vercel.com/Jon12/online-tools/6t8Vt8rG3waGVHTKU7ZzJuGc6Hoq [2s]
 ✅  Production: https://online-tools-phi.vercel.app [copied to clipboard] [2m]
 📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
-💡  To change the domain or build command, go to https://vercel.com/kuizuo12/online-tools/settings
+💡  To change the domain or build command, go to https://vercel.com/Jon12/online-tools/settings
 ```
 
 执行完毕后，将会在根目录创建.vercel 文件夹，其中 project.json 中存放 orgId 和 projectId，下面将会用到。此时在[dashboard](https://vercel.com/dashboard)中也能看到该项目被部署了。

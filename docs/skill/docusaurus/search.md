@@ -27,7 +27,7 @@ authors: Jon
     algolia: {
       appId: 'GV6YN1ODMO',
       apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'kuizuo',
+      indexName: 'Jon',
     }
 ```
 
@@ -48,7 +48,7 @@ themeConfig: {
     algolia: {
       apiKey: "xxxxxxxxxxx",
       appId: "xxxxxxxxxxx",
-      indexName: "kuizuo",
+      indexName: "Jon",
     },
 }
 ```
@@ -73,7 +73,7 @@ API_KEY = YOUR_API_KEY
 
 ```json title="docsearch.json"
 {
-  "index_name": "kuizuo",
+  "index_name": "Jon",
   "start_urls": [
     "http://jonoop.com/"
   ],

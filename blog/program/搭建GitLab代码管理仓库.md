@@ -11,7 +11,7 @@ keywords: [git, gitlab]
 
 我只要有代码的项目，都会放到 Github 上，无论公开还是私有项目。一是相当于在云端备份了一份代码，二是可以很方便的分享给别人。但对于私有项目而言存放在别人那总归不好，而且Github 时常会出现无法访问的情况（即使搭了梯子）。所以就打算搭建一个私有的仓库，基于[GitLab](https://gitlab.com/)。
 
-可以访问 [kuizuo · GitLab](https://gitlab.jonoop.com/kuizuo) 来查看搭建效果。
+可以访问 [Jon · GitLab](https://gitlab.jonoop.com/Jon) 来查看搭建效果。
 
 <!-- truncate -->
 
@@ -130,7 +130,7 @@ gitlab内部集成了letsencrypt，因此，这里只需要启用letsencrypt，�
 
    ```
    letsencrypt['enable'] = true #删除前面的#号，并将值修改为true
-   letsencrypt['contact_emails'] = ['kuizuo12@gmail.com'] #删除前面的#号,修改为自己的邮箱
+   letsencrypt['contact_emails'] = ['Jon12@gmail.com'] #删除前面的#号,修改为自己的邮箱
    letsencrypt['auto_renew'] = true #删除前面的#号  自动更新
    ```
 
@@ -216,7 +216,7 @@ gitlab-ctl start
 // 原仓库git
 https://github.com/jonoop/blog
 // 在https://后加上username@
-https://kuizuo@github.com/jonoop/blog
+https://Jon@github.com/jonoop/blog
 ```
 
 密码为上面的 Token（如果忘记的话，可以在 Github 的 Token 页中 Regenerate token），如下图所示

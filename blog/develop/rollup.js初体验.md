@@ -12,7 +12,7 @@ keywords: [rollup, webpack, utils]
 ![rollup.js](https://img.jonoop.com/rollupjs.png)
 
 
-近期准备写一个工具包 [@kuizuo/utils](https://github.com/jonoop/utils "@kuizuo/utils")，由于要将其发布到npm上，必然就要兼容不同模块（例如 CommonJS 和 ESModule），通过打包器可以很轻松的将代码分别编译成这不同模块格式。
+近期准备写一个工具包 [@Jon/utils](https://github.com/jonoop/utils "@Jon/utils")，由于要将其发布到npm上，必然就要兼容不同模块（例如 CommonJS 和 ESModule），通过打包器可以很轻松的将代码分别编译成这不同模块格式。
 
 恰好 [rollup 3](https://github.com/rollup/rollup/releases/tag/v3.0.0 "rollup 3") 正式发布，也算是来体验一下。
 

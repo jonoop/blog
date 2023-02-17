@@ -31,7 +31,7 @@ jobs:
     - name: Print a greeting
       env:
         MY_VAR: Hi there! My name is
-        NAME: Kuizuo
+        NAME: Jon
       run: |
         echo $MY_VAR $NAME.
 

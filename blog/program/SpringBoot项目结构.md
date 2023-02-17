@@ -9,7 +9,7 @@ keywords: [java, springboot, develop]
 
 <!-- truncate -->
 
-演示代码地址：[kuizuo/spring-boot-demo (github.com)](https://github.com/jonoop/spring-boot-demo)
+演示代码地址：[Jon/spring-boot-demo (github.com)](https://github.com/jonoop/spring-boot-demo)
 
 ## 目录结构展示图
 
@@ -83,7 +83,7 @@ public interface UserRepository extends JpaRepository<User, Long> , JpaSpecifica
 }
 ```
 
-一般情况下该接口无需定义额外方法，如有需要还可以定义属于自己的查询语句，比如上面的 findByUsername，这时候就注入后的 userRepository 对象就可以使用`userRepository.findByUsername("kuizuo");` ，将会返回数据库中该用户名的数据。
+一般情况下该接口无需定义额外方法，如有需要还可以定义属于自己的查询语句，比如上面的 findByUsername，这时候就注入后的 userRepository 对象就可以使用`userRepository.findByUsername("Jon");` ，将会返回数据库中该用户名的数据。
 
 #### UserService 类
 
@@ -102,9 +102,9 @@ public class UserService {
 **@Autowired 可能不建议使用字段注入**，可以在类添加@RequiredArgsConstructor 注解，表明 userRepository 不为空，总之目的就是将 userRepository 注入，供服务可用。
 
 ```java title="service/UserService.java"
-import com.kuizuo.demo.domain.User;
-import com.kuizuo.demo.repository.UserRepository;
-import com.kuizuo.demo.service.UserService;
+import com.Jon.demo.domain.User;
+import com.Jon.demo.repository.UserRepository;
+import com.Jon.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

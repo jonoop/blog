@@ -213,7 +213,7 @@ deno 刚发布的时候，甚至还不支持 NPM 软件包，这无非是要告�
 
 deno 像 vercel/netfily 一样提供了一个代码托管服务，可以将你的 deno 应用部署上去。对，目前来看还无法部署前端应用，因为要指明一个入门文件（main.ts）。
 
-你可以通过 [https://kuizuo.deno.dev/](https://kuizuo.deno.dev/ 'https://kuizuo.deno.dev/') 来访问我使用 deno Deploy 所创建的一个在线项目。将会输出一个`Hello World!` 的页面。
+你可以通过 [https://Jon.deno.dev/](https://Jon.deno.dev/ 'https://Jon.deno.dev/') 来访问我使用 deno Deploy 所创建的一个在线项目。将会输出一个`Hello World!` 的页面。
 
 提供一个免费的线上环境体验，对开发者而言尤为重要，尤其是在将自己的项目成果分享给他人展示时，成就感油然而生。
 

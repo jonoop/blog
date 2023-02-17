@@ -95,7 +95,7 @@ import (
 )
 
 func main() {
-  payload := strings.NewReader(`{"name":"kuizuo"}`)
+  payload := strings.NewReader(`{"name":"Jon"}`)
 
   req, _ := http.NewRequest("POST", "http://127.0.0.1:5000/api/test", payload)
 
@@ -184,7 +184,7 @@ func main() {
   dm := Demo{
     Session: session,
     User: User{
-      Username: "kuizuo",
+      Username: "Jon",
       Password: "a123456",
     },
   }

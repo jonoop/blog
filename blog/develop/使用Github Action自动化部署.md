@@ -94,11 +94,11 @@ token 只会在生成的时候显示一次，如需要再次显示，则可以�
 
 ![image-20220511122420135](https://img.jonoop.com/image-20220511122420135.png)
 
-此时访问https://kuizuo.github.io/vite-project就可呈现vite项目（不过我已经把仓库给关闭了），但进入会白屏，控制台提示
+此时访问https://Jon.github.io/vite-project就可呈现vite项目（不过我已经把仓库给关闭了），但进入会白屏，控制台提示
 
 ![image-20220511122914534](https://img.jonoop.com/image-20220511122914534.png)
 
-很显然，需要静态资源请求的路径错了，正确的应该是https://kuizuo.github.io/vite-project/assets/index.2435d274.js，根据Vite中的[构建生产版本](https://www.vitejs.net/guide/build.html#public-base-path) 通过命令行参数 `--base=/vite-project/`
+很显然，需要静态资源请求的路径错了，正确的应该是https://Jon.github.io/vite-project/assets/index.2435d274.js，根据Vite中的[构建生产版本](https://www.vitejs.net/guide/build.html#public-base-path) 通过命令行参数 `--base=/vite-project/`
 
 稍加操作在 Install and Build 加上 base 参数
 

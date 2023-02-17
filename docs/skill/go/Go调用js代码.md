@@ -42,7 +42,7 @@ func main() {
   }
 `)
 
-  ret, _ := vm.Call("hello", nil, "kuizuo")
+  ret, _ := vm.Call("hello", nil, "Jon")
   fmt.Println(ret)
 }
 

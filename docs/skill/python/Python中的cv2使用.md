@@ -127,7 +127,7 @@ import cv2
 
 img = cv2.imread('temp.jpg')
 # 图片对象、文本、像素、字体、字体大小、颜色、字体粗细
-img_text = cv2.putText(img, "kuizuo", (50, 50),
+img_text = cv2.putText(img, "Jon", (50, 50),
                     cv2.FONT_HERSHEY_DUPLEX, 5.5, (35, 175, 255), 2)
 cv2.imwrite("result.jpg", img_text)
 ```

@@ -15,7 +15,7 @@ keywords: [vscode, 开发工具, 配置]
 看一大堆vscode相关推荐，不如直接把别人的vscode配置直接导入到本地上运行测试。
 以下是我的 Vscode 全部配置文件，需要的可自行下载导入（替换本地 vscode 相对应的配置文件即可）。
 
-> 下载地址 https://pan.jonoop.com/s/RgiP 密码 kuizuo
+> 下载地址 https://pan.jonoop.com/s/RgiP 密码 Jon
 
 <!-- truncate -->
 
@@ -296,7 +296,7 @@ npm install @types/express
 
 这里补充一下，有时候我想自己定义一个代码提示，有没有办法呢，当然有，如果你恰巧学过 java，想必每次写`System.out.println`都痛苦的要死，这时候你就可以像这样
 
-1. 创建一个.vscode 文件夹，在文件夹里创建一个名为`kuizuo.code-snippets`（只要后缀是 code-snippets 就行）
+1. 创建一个.vscode 文件夹，在文件夹里创建一个名为`Jon.code-snippets`（只要后缀是 code-snippets 就行）
 2. 在这个文件内写上如下代码
 
 ```json

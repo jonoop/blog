@@ -197,7 +197,7 @@ steps:
 
 其中 build 这个不用多说，与 node 构建相关的，不过多介绍。
 
-upload 则使用[appleboy/drone-scp](https://plugins.drone.io/plugins/scp 'appleboy/drone-scp')插件，可以将构建出来的文件通过发送到服务器指定位置。在这里 source 对应就是构建的文件，target 则是要移动的位置，这里的 `/www/wwwroot/${DRONE_REPO_OWNER}/${DRONE_REPO_NAME}` 对应本项目为 `/www/wwwroot/kuizuo/vitesse`。此外 ssh 的 host，username，password 或 key，都作为环境变量（私有变量的方式传递，这在 drone 的控制台中可以设置）。
+upload 则使用[appleboy/drone-scp](https://plugins.drone.io/plugins/scp 'appleboy/drone-scp')插件，可以将构建出来的文件通过发送到服务器指定位置。在这里 source 对应就是构建的文件，target 则是要移动的位置，这里的 `/www/wwwroot/${DRONE_REPO_OWNER}/${DRONE_REPO_NAME}` 对应本项目为 `/www/wwwroot/Jon/vitesse`。此外 ssh 的 host，username，password 或 key，都作为环境变量（私有变量的方式传递，这在 drone 的控制台中可以设置）。
 
 由于每次构建可能需要删除原有的已部署的资源文件，那么可以使用 [appleboy/drone-ssh](https://plugins.drone.io/plugins/ssh) 插件来执行终端命令来删除，例如
 

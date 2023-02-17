@@ -22,13 +22,13 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 // Content-Type: application/json;charset=UTF-8
 Accept: application/json, text/plain, */*
 
-{"username":"kuizuo","password":"a12345678"}
+{"username":"Jon","password":"a12345678"}
 ```
 
 上面那个请求发送到我的服务器，服务器却接收到的是这样一串值
 
 ```json
-{ "{\"username\":\"kuizuo\",\"password\":\"a12345678\"}": "" }
+{ "{\"username\":\"Jon\",\"password\":\"a12345678\"}": "" }
 ```
 
 很显然，它把 json 格式解析成了 x-www-form-urlencoded。
@@ -72,7 +72,7 @@ parameter 可选，一些参数，如Accept请求头的q参数， Content-Type�
 
 - application/octet-stream ： 二进制流数据（如常见的文件下载）
 
-- application/x-www-form-urlencoded ： form 表单数据被编码为 key/value 格式（通过=与&拼接）发送到服务器（表单默认的提交数据的格式）格式如: username=kuizuo&password=a12345678
+- application/x-www-form-urlencoded ： form 表单数据被编码为 key/value 格式（通过=与&拼接）发送到服务器（表单默认的提交数据的格式）格式如: username=Jon&password=a12345678
 
   另外一种常见的媒体格式是上传文件之时使用的：
 

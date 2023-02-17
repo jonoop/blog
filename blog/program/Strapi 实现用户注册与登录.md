@@ -129,7 +129,7 @@ axios.post('http://localhost:1337/api/auth/local/register', {
 
 通过相应的 hooks 就可以实现登录注册以及数据增删改查的功能，演示例子可看 [Usage](https://strapi.nuxtjs.org/usage)
 
-这里有一份我创建的预设模板 [kuizuo/vitesse-nuxt3-strapi](https://github.com/jonoop/vitesse-nuxt3-strapi)，一开始的示例也是基于这个模板来搭建的。不过目前 Strapi 对 TypeScript 支持不是那么友好，尤其在 window 下会出现无法运行的情况，详看这个 [pr](https://github.com/strapi/strapi/pull/14088)。所以目前 backend 使用 js 创建，然后增加 ts 相关支持的，所以有些 ts 支持可能不是那么友好。
+这里有一份我创建的预设模板 [Jon/vitesse-nuxt3-strapi](https://github.com/jonoop/vitesse-nuxt3-strapi)，一开始的示例也是基于这个模板来搭建的。不过目前 Strapi 对 TypeScript 支持不是那么友好，尤其在 window 下会出现无法运行的情况，详看这个 [pr](https://github.com/strapi/strapi/pull/14088)。所以目前 backend 使用 js 创建，然后增加 ts 相关支持的，所以有些 ts 支持可能不是那么友好。
 
 :::note
 

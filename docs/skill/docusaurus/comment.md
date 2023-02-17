@@ -29,7 +29,7 @@ Waline：需要搭建后端服务与数据库服务，提供评论与浏览量�
 
 ```html
 <script src="https://giscus.app/client.js"
-        data-repo="kuizuo/blog"
+        data-repo="Jon/blog"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI="
         data-category="General"
         data-category-id="DIC_kwDOF7NJDM4CPK95"
@@ -49,7 +49,7 @@ Waline：需要搭建后端服务与数据库服务，提供评论与浏览量�
 
 ```javascript title='docusaurus.config.js'
 giscus: {
-    repo: 'kuizuo/blog',
+    repo: 'Jon/blog',
     repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
     category: 'General',
     categoryId: 'DIC_kwDOF7NJDM4CPK95',

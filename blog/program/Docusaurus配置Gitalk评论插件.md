@@ -117,8 +117,8 @@ const options = {
   clientID: 'GitHub Application Client ID',
   clientSecret: 'GitHub Application Client Secret',
   repo: 'blog',
-  owner: 'kuizuo',
-  admin: ['kuizuo'],
+  owner: 'Jon',
+  admin: ['Jon'],
   id: title,
   title: title,
   labels: labels,
@@ -164,38 +164,38 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
 
 通过 github api 还可以获取 issues 列表
 
-访问 https://api.github.com/repos/kuizuo/blog/issues，返回结果如下
+访问 https://api.github.com/repos/Jon/blog/issues，返回结果如下
 
 ```json
 [
   {
-    "url": "https://api.github.com/repos/kuizuo/blog/issues/24",
-    "repository_url": "https://api.github.com/repos/kuizuo/blog",
-    "labels_url": "https://api.github.com/repos/kuizuo/blog/issues/24/labels{/name}",
-    "comments_url": "https://api.github.com/repos/kuizuo/blog/issues/24/comments",
-    "events_url": "https://api.github.com/repos/kuizuo/blog/issues/24/events",
+    "url": "https://api.github.com/repos/Jon/blog/issues/24",
+    "repository_url": "https://api.github.com/repos/Jon/blog",
+    "labels_url": "https://api.github.com/repos/Jon/blog/issues/24/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Jon/blog/issues/24/comments",
+    "events_url": "https://api.github.com/repos/Jon/blog/issues/24/events",
     "html_url": "https://github.com/jonoop/blog/issues/24",
     "id": 1111300101,
     "node_id": "I_kwDOF7NJDM5CPRgF",
     "number": 24,
     "title": "Docusaurus配置Gitalk评论插件",
     "user": {
-      "login": "kuizuo",
+      "login": "Jon",
       "id": 61005888,
       "node_id": "MDQ6VXNlcjYxMDA1ODg4",
       "avatar_url": "https://avatars.githubusercontent.com/u/61005888?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/kuizuo",
+      "url": "https://api.github.com/users/Jon",
       "html_url": "https://github.com/jonoop",
-      "followers_url": "https://api.github.com/users/kuizuo/followers",
-      "following_url": "https://api.github.com/users/kuizuo/following{/other_user}",
-      "gists_url": "https://api.github.com/users/kuizuo/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/kuizuo/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/kuizuo/subscriptions",
-      "organizations_url": "https://api.github.com/users/kuizuo/orgs",
-      "repos_url": "https://api.github.com/users/kuizuo/repos",
-      "events_url": "https://api.github.com/users/kuizuo/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/kuizuo/received_events",
+      "followers_url": "https://api.github.com/users/Jon/followers",
+      "following_url": "https://api.github.com/users/Jon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Jon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Jon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Jon/subscriptions",
+      "organizations_url": "https://api.github.com/users/Jon/orgs",
+      "repos_url": "https://api.github.com/users/Jon/repos",
+      "events_url": "https://api.github.com/users/Jon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Jon/received_events",
       "type": "User",
       "site_admin": false
     },
@@ -203,7 +203,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
       {
         "id": 3754161267,
         "node_id": "LA_kwDOF7NJDM7fw_Rz",
-        "url": "https://api.github.com/repos/kuizuo/blog/labels/Gitalk",
+        "url": "https://api.github.com/repos/Jon/blog/labels/Gitalk",
         "name": "Gitalk",
         "color": "ededed",
         "default": false,
@@ -212,7 +212,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
       {
         "id": 3754411279,
         "node_id": "LA_kwDOF7NJDM7fx8UP",
-        "url": "https://api.github.com/repos/kuizuo/blog/labels/blog",
+        "url": "https://api.github.com/repos/Jon/blog/labels/blog",
         "name": "blog",
         "color": "ededed",
         "default": false,
@@ -221,7 +221,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
       {
         "id": 3754517867,
         "node_id": "LA_kwDOF7NJDM7fyWVr",
-        "url": "https://api.github.com/repos/kuizuo/blog/labels/Docusaurus%E9%85%8D%E7%BD%AEGitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6",
+        "url": "https://api.github.com/repos/Jon/blog/labels/Docusaurus%E9%85%8D%E7%BD%AEGitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6",
         "name": "Docusaurus配置Gitalk评论插件",
         "color": "ededed",
         "default": false,
@@ -241,7 +241,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
     "active_lock_reason": null,
     "body": "http://jonoop.com/develop/Docusaurus配置Gitalk评论插件\n前言",
     "reactions": {
-      "url": "https://api.github.com/repos/kuizuo/blog/issues/24/reactions",
+      "url": "https://api.github.com/repos/Jon/blog/issues/24/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,
@@ -252,7 +252,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
       "rocket": 0,
       "eyes": 0
     },
-    "timeline_url": "https://api.github.com/repos/kuizuo/blog/issues/24/timeline",
+    "timeline_url": "https://api.github.com/repos/Jon/blog/issues/24/timeline",
     "performed_via_github_app": null
   }
 ]
